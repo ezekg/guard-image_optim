@@ -1,14 +1,13 @@
 require "./lib/guard/image-optim"
 
 ###
-# Sample Guardfile block for Guard::MtHaml
+# Sample Guardfile block for Guard::ImageOptim
 #
-# :input           ("views/src") set output directory for compiled files
-# :output          ("views")     set input directory with haml files
-# :environment     ("php")       haml environment
-# :notifications   (true)        toggle guard notifications
-# :compress_output (false)       compress compiled haml files
-# :static_files    (false)       compile haml to static html
-# :run_at_start    (true)        compile files when guard starts
+# :input         ("images") set input image directory
+# :nice          (10)       nice level for image_optim gem
+# :notifications (true)     toggle guard notifications
+# :run_at_start  (false)    optimize images when guard starts
+# :pngout        (false)    toggle pngout for image_optim gem
+# :svgo          (false)    toggle svgo for image_optim gem
 ###
-guard :mthaml, input: "tests/php", output: "tests", compress_output: true
+guard :image_optim, :input => "images", :nice => 1

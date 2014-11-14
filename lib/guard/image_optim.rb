@@ -17,6 +17,7 @@ module Guard
         def initialize(options = {})
             options = {
                 :input => "images",
+                :nice => 10,
                 :notifications => true,
                 :run_at_start => false,
                 :pngout => false,
@@ -24,6 +25,7 @@ module Guard
             }.merge(options)
 
             @optimizer = ::ImageOptim.new({
+                :nice => options[:nice],
                 :pngout => options[:pngout],
                 :svgo => options[:svgo]
             })
