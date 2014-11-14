@@ -1,4 +1,4 @@
-# Guard::ImageOptim [![Gem Version](https://badge.fury.io/rb/guard-mthaml.svg)](http://badge.fury.io/rb/guard-mthaml)
+# Guard::ImageOptim [![Gem Version](https://badge.fury.io/rb/guard-image_optim.svg)](http://badge.fury.io/rb/guard-image_optim)
 Guard::ImageOptim automatically optimizes your images with image_optim.
 
 ## Installation
